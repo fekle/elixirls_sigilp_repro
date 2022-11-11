@@ -18,6 +18,8 @@ defmodule ElixirlsSigilpReproWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    get "/sigil-p-issue", PageController, :home
   end
 
   # Other scopes may use custom stacks.

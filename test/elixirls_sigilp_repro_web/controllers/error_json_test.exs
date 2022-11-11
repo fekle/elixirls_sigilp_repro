@@ -2,7 +2,9 @@ defmodule ElixirlsSigilpReproWeb.ErrorJSONTest do
   use ElixirlsSigilpReproWeb.ConnCase, async: true
 
   test "renders 404" do
-    assert ElixirlsSigilpReproWeb.ErrorJSON.render("404.json", %{}) == %{errors: %{detail: "Not Found"}}
+    assert ElixirlsSigilpReproWeb.ErrorJSON.render("404.json", %{}) == %{
+             errors: %{detail: "Not Found"}
+           }
   end
 
   test "renders 500" do

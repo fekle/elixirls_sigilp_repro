@@ -7,6 +7,11 @@
     <.live_title suffix=" · Phoenix Framework">
       <%= assigns[:page_title] || "ElixirlsSigilpRepro" %>
     </.live_title>
+    <!-- SIGIL_P ISSUE - THIS WORKS -->
+    <link phx-track-static rel="sigil_p_issue_a" href={~p"/sigil-p-issue?#{[issue: true]}"} />
+    <link phx-track-static rel="sigil_p_issue_b" href={~p"/sigil-p-issue?#{%{issue: true}}"} />
+    <link phx-track-static rel="sigil_p_issue_c" href={~p"/sigil-p-issue?issue=#{true}"} />
+    <!-- END SIGIL P ISSUE -->
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
     </script>
